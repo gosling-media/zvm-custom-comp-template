@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ height: '60px', width: '60px' }}>
-        <Iframe />
+      <div>
+        <Iframe url="https://gds.pro" />
       </div>
     </BrowserRouter>
   );

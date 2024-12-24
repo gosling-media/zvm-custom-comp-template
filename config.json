@@ -1,6 +1,6 @@
 {
   "customComponentItems": {
-    "Count": {
+    "Iframe": {
       "name": "Iframe",
       "imagePath": "preview/iframe.png",
       "description": "Full size window for iframe",

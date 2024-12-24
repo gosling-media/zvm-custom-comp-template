@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Iframe url="https://gds.pro" />
+        <Iframe url={itemInputs.url} />
       </div>
     </BrowserRouter>
   );

@@ -1,22 +1,24 @@
-import React from 'react';
-import { State, EventHandler } from 'zvm-code-context';
+import { EventHandler } from 'zvm-code-context';
 
-
-interface IframeProps {
-    url?: string;
+export interface IframePropData {
+    url: string;
 }
 
-interface IframeStateData extends State {
-    // Define state properties here
+export interface IframeStateData { }
+
+export interface IframeEvent {
+    onConfirm?: EventHandler;
+    onCancel?: EventHandler;
 }
 
-interface IframeEvent {
-    onLoad?: EventHandler;
-    // Define other events here
+export interface IframeProps {
+    propData: IframePropData;
+    propState: IframeStateData;
+    event: IframeEvent;
 }
 
-export const Iframe: React.FC<IframeProps> = ({ url = "about:blank" }) => {
+export function Iframe({ propData }: IframeProps) {
     return (
-        <iframe style={{ width: '100vw', height: '100vh', border: "0", borderRadius: "0" }} src={url} />
+        <iframe style={{ width: '100vw', height: '100vh', border: "0", borderRadius: "0" }} src={propData.url} />
     );
-};
+}

@@ -1,16 +1,16 @@
 {
   "customComponentItems": {
     "Count": {
-      "name": "Count",
-      "imagePath": "preview/count.jpeg",
-      "description": "test description, test description, test description",
+      "name": "Iframe",
+      "imagePath": "preview/iframe.png",
+      "description": "Full size window for iframe",
       "itemInputs": [
         {
-          "fieldName": "foo",
+          "fieldName": "url",
           "type": "TEXT"
         }
       ]
     }
   },
-  "version": "1.0.2"
+  "version": "1.0.0"
 }

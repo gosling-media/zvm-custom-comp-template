@@ -1,3 +1,3 @@
-import { Count } from './Count';
+import { Iframe } from './Iframe';
 
-export default { Count };
+export default { Iframe };
